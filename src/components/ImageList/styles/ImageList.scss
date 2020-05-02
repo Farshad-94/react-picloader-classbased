@@ -1,0 +1,11 @@
+.image {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.image img {
+  padding: 2rem;
+  width: 25rem;
+  box-sizing: border-box;
+}
