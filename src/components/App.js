@@ -15,10 +15,10 @@ class App extends React.Component {
   onSearchSubmit = term => {  
     getPhoto(term)
       .then(res =>{
-        this.setState({ images: res.data.results}); 
+        this.setState({ images: res.data.results }); 
       })
       .catch(err => {
-        this.setState({ error: true})
+        this.setState({ error: true })
       })
   }
 

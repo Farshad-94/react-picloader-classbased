@@ -14,6 +14,8 @@ export default class SearchBar extends Component {
   }
 
   render() {
+    const { term } = this.state;
+
     return (
       <div className='ui segment'>
         <form onSubmit={e => this.handleSubmit(e)} className='ui form'>
@@ -21,7 +23,7 @@ export default class SearchBar extends Component {
               <label>Image Search</label>
               <input 
                 type="text"
-                value={this.state.term}
+                value={term}
                 onChange={(e) => this.setState({ term: e.target.value })}
               />
           </div>
